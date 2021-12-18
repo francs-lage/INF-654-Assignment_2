@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- My local css file  --> 
+    <link type="text/css" rel="stylesheet" href="css/main.css">          
+    <!-- Compiled and minified CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>Grocery List App</title>
+
+</head>
+
+<body>
+
+    <!-- This is from https://materializecss.com/navbar.html -->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Grocery List App</a>
+        </div>
+      </nav>
+
+    <ul class="collapsible expandable">
+        <li class="active">
+          <div class="collapsible-header"><i class="material-icons">chevron_right</i>Produce - using materialize</div>
+          <div class="collapsible-body">
+
+            <div class="collection">
+                <a href="#!" class="collection-item">apples</a>
+                <a href="#!" class="collection-item active">potatoes</a>
+                <a href="#!" class="collection-item">tomatoes</a>
+                <a href="#!" class="collection-item">brocolli</a>
+              </div>
+
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">chevron_right</i>Dairy</div>
+          <div class="collapsible-body">
+              <div>
+                <ul>
+                    <li>milk</li>
+                    <li class="checked">cream</li>
+                    <li>eggs</li>
+                    <li>using local css</li>
+                    <li>cheese</li>
+                    <li>yogurt</li>
+                </ul> 
+              </div>
+          </div>
+        </li>
+        <li class="active">
+            <div class="collapsible-header active"><i class="material-icons">chevron_right</i>Bakery - using main.css</div>
+            <div class="collapsible-body">
+                <div>
+                    <ul>
+                        <li>bread</li>
+                        <li>hot dog buns</li>
+                        <li class="checked">cake</li>
+                    </ul> 
+                  </div>              
+            </div>
+        </li>
+        <li>
+            <div class="collapsible-header active"><i class="material-icons">chevron_right</i>Uncategorized</div>
+            <div class="collapsible-body">
+                <div>
+                    <ul>
+                        <li>dog food</li>
+                        <li class="checked">cat food</li>
+                        <li>dish soap</li>
+                        <li>laundry soap</li>
+                    </ul> 
+                  </div>
+            </div>
+        </li>
+        
+    </ul>
+
+<!--JavaScript at end of body for optimized loading - This is from materializeCSS-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>   
+    M.AutoInit(); 
+    var elem = document.querySelector('.collapsible.expandable');
+    var instance = M.Collapsible.init(elem, {
+    accordion: false
+});
+
+</script>
+
+</body>
+
+</html>
